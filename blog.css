@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+
+#external {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-color: #8D608C;
+    flex-shrink: 0;
+    overflow-y: auto;
+
+
+    /* display: grid;
+    grid-template-columns: 10% 80% 10%; */
+}
+
+#card {
+    width: 800px;
+    display: grid;
+    grid-template-rows: 40% 5% 20% 40% auto;
+    /* height: 200vh; */
+    background-color: #d3d0d0;
+    align-items: center;
+    border-radius: 5px;
+    grid-area: 2;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.16), 0 30px 60px rgba(0, 0, 0, 0.23);
+    overflow-y: auto;
+
+
+}
+
+.header {
+    grid-area: 1;
+}
+
+.imgHeader {
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.name {
+    font-family: Bradley Hand, cursive;
+    font-size: 30px;
+    font-style: italic;
+    color: #763568;
+}
+
+#description {
+    font-family: Snell Roundhand, cursive;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.navbar {
+    grid-area: 2;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
+}
+
+.nav {
+    grid-area: 2;
+    /* width: fit-content; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(201, 195, 195);
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: #763568;
+    text-align: center;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: #b61693;
+}
+
+#about {
+    padding: 5px;
+    text-align: left;
+    grid-area: 3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: black;
+    border-bottom: 1px dashed black;
+}
+
+.contact {
+    grid-area: 2;
+    right: 200px;
+}
+
+.btn {
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background: #763568;
+    border-radius: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+#skills {
+    padding: 5px;
+    text-align: left;
+    grid-area: 4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: black;
+    border-bottom: 1px dashed black;
+
+}
+
+progress {
+    width: 70%;
+    height: 20px;
+    color: #758382;
+}
