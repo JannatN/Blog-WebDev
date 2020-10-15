@@ -27,18 +27,14 @@ body {
 }
 
 .imgHeader {
-    grid-area: 1;
     border-radius: 0px;
     background-size: cover;
     width: 900px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* position: sticky; */
 }
 
-#bio {
-    grid-area: 2;
-    /* height: 500px; */
-}
+
 
 .name {
     font-family: Bradley Hand, cursive;
@@ -57,8 +53,8 @@ body {
 .navbar {
     grid-area: 3;
     /* height: 50px; */
-    border-top: 2px solid #574f55;
-    border-bottom: 2px solid #574f55;
+    border-top: 2px dashed #574f55;
+    border-bottom: 2px dashed #574f55;
 }
 
 .nav {
@@ -70,6 +66,7 @@ body {
 
 .nav li {
     float: left;
+    font-weight: 800;
 }
 
 .nav li a {
@@ -83,15 +80,17 @@ body {
 }
 
 .nav li a:hover {
-    background-color: #b61693;
+    background-color: #bd7caf;
 }
 
 .aside {
     width: 100%;
-    height: 250px;
     background-color: lightgray;
-    border-radius: 20px;
-   
+    /* border-radius: 20px; */
+}
+#pic{
+    width: 270px;
+    height: 370px;
 }
 
 .sec-1 {
@@ -104,8 +103,9 @@ body {
     padding: 5px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: black;
+    margin-left: 10px;
     /* border-bottom: 2px dashed #574f55; */
     /* padding-bottom: 10px; */
     /* height: 100vh; */
@@ -130,7 +130,7 @@ body {
     font-size: 15px;
     color: black;
     font-weight: 600;
-    /* padding-bottom: 100px; */
+    padding-bottom: 50px;
 }
 
 #education {
@@ -138,30 +138,31 @@ body {
     padding: 5px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: black;
+    margin-left: 10px;
 }
 
 #skills {
     padding: 5px;
     text-align: left;
-    grid-area: 4;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: black;
-    border-bottom: 2px dashed #574f55;
+    /* border-bottom: 2px dashed #574f55; */
     padding-bottom: 10px;
+    margin-left: 10px;
 }
 
 #achievements {
     padding: 5px;
     text-align: left;
-    grid-area: 5;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     color: black;
-    border-bottom: 2px dashed #574f55;
+    /* border-bottom: 2px dashed #574f55; */
     padding-bottom: 10px;
+    margin-left: 10px;
 }
 
 #achievements a {
@@ -188,3 +189,24 @@ progress {
     color: #763568;
     -webkit-text-stroke: 1px black;
 }
+
+#interests {
+    padding: 5px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    color: black;
+    /* border-bottom: 2px dashed #574f55; */
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+
+.books {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+}
+/* .icons{
+    width: 30px;
+    height: 20px;
+} */
