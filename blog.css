@@ -84,6 +84,7 @@ body {
 .aside {
     width: 100%;
     background-color: lightgray;
+    /* height: 90%; */
     /* border-radius: 20px; */
 }
 
@@ -129,7 +130,10 @@ body {
     font-size: 15px;
     color: black;
     font-weight: 600;
-    padding-bottom: 50px;
+    padding-bottom: 5%;
+    width: 100%;
+    background-color: lightgray;
+    height: 220px;
 }
 
 #education {
