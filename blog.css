@@ -130,6 +130,8 @@ body {
     width: 100%;
     background-color: lightgray;
     height: 220px;
+    margin-top: 10%;
+    border-radius: 10%;
 }
 
 @media screen and (max-width: 480px) {
