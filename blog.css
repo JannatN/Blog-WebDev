@@ -249,19 +249,19 @@ progress::-webkit-progress-value {
     margin-left: 10px;
 }
 
-.quotes {
+.flowerPoints {
     list-style: none;
     padding-left: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
 }
 
-.quotes li {
+.flowerPoints li {
     position: relative;
     padding-left: 20px;
 }
 
-.quotes li:before {
+.flowerPoints li:before {
     content: '';
     width: 20px;
     height: 20px;
