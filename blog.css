@@ -1,5 +1,6 @@
 body {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     text-align: center;
     background-size: cover;
@@ -8,7 +9,7 @@ body {
 }
 
 .right {
-    float: left;
+    /* float: left; */
     width: 15%;
     text-align: center;
     background-color: #9b6e9abd;
@@ -22,13 +23,10 @@ body {
 
 #card {
     width: 70%;
-    /* display: grid; */
-    /* grid-template-rows: 40% 30% 6% 40% auto; */
     background-color: #fffdfdc9;
-    /* width: 900px; */
     height: auto;
     border-radius: 5px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.76), 0 30px 60px rgba(0, 0, 0, 0.76);
+    box-shadow: 60px 60px 60px rgba(0, 0, 0, 0.76), 0 60px 60px rgba(0, 0, 0, 0.76);
 }
 
 .avatar {
@@ -62,17 +60,15 @@ body {
 }
 
 .navbar {
-    /* grid-area: 3; */
-    /* height: 50px; */
     border-top: 2px dashed #574f55;
     border-bottom: 2px dashed #574f55;
 }
 
 .nav {
-    /* display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto; */
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    /* display: flex;
+    flex-wrap: nowrap; */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -98,13 +94,6 @@ body {
     background-color: #bd7caf;
 }
 
-.aside {
-    width: 100%;
-    background-color: lightgray;
-    /* height: 90%; */
-    /* border-radius: 20px; */
-}
-
 #pic {
     width: 270px;
     height: 370px;
@@ -125,6 +114,11 @@ body {
     margin-left: 10px;
 }
 
+.aboutPic {
+    width: 100%;
+    margin-top: 5%;
+}
+
 .btn {
     width: 90%;
     padding: 5%;
@@ -139,26 +133,12 @@ body {
     font-weight: 800;
 }
 
-#contact {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* font-size: 50vw; */
-    color: black;
-    font-weight: 600;
-    padding-bottom: 5%;
-    width: 100%;
-    background-color: lightgray;
-    /* height: 220px; */
-    margin-top: 10%;
-    border-radius: 10%;
-}
-
 #achievements {
     padding: 5px;
     text-align: left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
     color: black;
-    /* border-bottom: 2px dashed #574f55; */
     padding-bottom: 10px;
     margin-left: 10px;
 }
@@ -207,13 +187,34 @@ body {
     transform: translateY(-50%);
 }
 
-@media screen and (max-width: 500px) {
-    /* #contact {
-        font-size: 1.3vw;
-    }
+#contact {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5%;
+    text-align: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-weight: 600;
+    padding-bottom: 5%;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#social_media {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media screen and (max-width: 600px) {
     .nav {
         grid-template-columns: auto;
-    } */
+    }
     #achievements a {
         color: rgb(58, 58, 155);
         font-size: 2.5vw;
@@ -221,23 +222,44 @@ body {
     .flowerPoints li {
         font-size: 3vw;
     }
-}
-
-@media screen and (max-width: 410px) {
-    .flowerPoints li {
-        font-size: 3vw;
-    }
-}
-
-@media screen and (min-width: 500px) {
     #contact {
-        font-size: 1.2vw;
+        grid-template-columns: auto;
+        font-size: 2.5vw;
+    }
+    #social_media {
+        grid-template-columns: auto auto;
     }
 }
 
-@media screen and (max-width: 970px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media screen and (min-width: 600px) {
     .nav {
-        flex-wrap: wrap;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    .nav {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
+    .nav {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        grid-template-columns: auto auto auto auto auto auto;
     }
 }
 
@@ -310,8 +332,26 @@ progress::-webkit-progress-value {
     width: auto;
     font-weight: 700;
     font-style: italic;
-    background: #763568;
+    background: #a15892;
     text-align: right;
     color: rgb(8, 8, 8);
     padding: 15px;
+}
+
+.icons {
+    justify-self: center;
+    height: 40px;
+}
+
+.infoIcons {
+    justify-self: center;
+    height: 30px;
+}
+
+#sec-9 {
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #763568;
+    background-color: rgb(226, 225, 225);
 }
